@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INPUT ELEMENTS</title>
+    <style>
+        li{
+            list-style-type: none;
+            margin: 10px;
+            padding: 5px;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+            
+        }
+        .a{
+            border: 2px solid brown;
+            width: 500px;
+            margin: auto;
+            border-radius: 10px;
+            background-color: antiquewhite;
+        }
+        .a:hover{
+            background-color: gainsboro;
+        }
+        h2{
+            text-align: center;
+            border: 3px double rgb(4, 11, 160);
+            border-radius: 15px;
+            background-color: rgb(227, 240, 236);
+            color:tomato;
+            text-shadow: 2px 2px 2px black;
+            font-weight: bold;
+        }
+        h2:hover{
+            text-align: center;
+            border: 3px double rgb(230, 231, 248);
+            border-radius: 15px;
+            background-color: rgb(61, 66, 65);
+            color:rgb(216, 213, 212);
+            text-shadow: 2px 2px 2px rgb(176, 207, 2);
+            font-weight: bold;
+            
+        }
+        .btn{
+            border: 2px dotted red;
+            border-radius: 5px;
+            background-color: floralwhite;
+            font-size: 20px;
+            margin-left: 200px;
+            font-family: cursive;
+
+        }
+        .reg{
+            border: 2px dashed rgb(2, 54, 96);
+            border-radius: 3px;
+            background-color: rgb(67, 138, 114);
+            margin-left: 100px;
+            font-size: 20px;
+            color: white;
+
+        }
+        .btn:hover{
+            border: 2px dotted rgb(230, 224, 224);
+            border-radius: 5px;
+            background-color: rgb(13, 11, 8);
+            font-size: 20px;
+            margin-left: 200px;
+            font-family: cursive;
+            color: white;
+
+        }
+        .reg:hover{
+            border: 2px dashed rgb(211, 208, 209);
+            border-radius: 3px;
+            background-color: rgb(4, 12, 9);
+            margin-left: 100px;
+            font-size: 20px;
+            color: white;
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <form class="a" method="post" action="https://ejhfdshvjkd.com" > 
+        <h2>STUDENT REGISTRATION FORM</h2>
+            <li>
+                <label for="">ENTER USER NAME : </label>
+                <input type="text" name="username" required placeholder="Enter User Name">
+            </li>
+            <li>
+                <label for="">User Account ID : </label>
+                <input type="text" name="userid" maxlength="12" placeholder="Enter User ID">
+            </li>
+            <li>
+                <label for="">PASSWORD : </label>
+                <input type="password" name="password" maxlength="8" placeholder="Enter Password">
+            </li>
+                <li>
+                    User Gender : 
+                    <input type="radio" name="gender">Male 
+                    <input type="radio" name="gender">Female
+                </li>            
+                <li>
+                    Languages :
+                    <input type="checkbox">English
+                    <input type="checkbox">Telugu
+                    <input type="checkbox">Hindi
+                </li>
+                <li>
+                    Country Name : 
+                    <select name="" id="">
+                        <option>India</option>
+                        <option>UK</option>
+                        <option>USA</option>
+                        <option>JAPAN</option>
+                    </select>
+
+                </li>
+                <li>
+                    Select District :
+                    <select name="" id="">
+                        <optgroup label="Andhra Pradesh">
+                            <option value="">Vijayawada</option>
+                            <option value="">Guntur</option>
+                            <option value="">krishna</option>
+                        </optgroup>
+
+                        <optgroup label="Telengana">
+                             <option value="">HYD</option>
+                            <option value="">Khamam</option>
+                            <option value="">Karim Nagar</option>
+                        </optgroup>
+                    </select>
+                </li>
+                <li>
+                    Tell About Yourself :
+                    <textarea name="" id="" cols="60" rows="10" placeholder="Max Length 300 chars"></textarea>
+                </li>
+                <li>
+                    File Upload
+                    <input type="file" accept=".doc">
+                </li>
+                <li>
+                    Upload Photo
+                    <input type="file" accept=".jpg">
+                </li>
+                <li>
+                <input type="button" value="Register" class="reg">
+           
+                <input type="reset" value="Reset" class="reg">
+            </li>
+            <li>
+                <input type="submit" class="btn">
+            </li>
+    </form>
+</body>
+
+</html>
