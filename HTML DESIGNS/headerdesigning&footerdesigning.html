@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HeaderDesigning & FooterDesigning</title>
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        .header {
+            display: grid;
+            grid-template-columns: 4fr 4fr 4fr;
+            height: 70px;
+            background-color: wheat;
+
+        }
+
+        img {
+            height: 50px;
+            border-radius: 30px;
+            margin-top: 10px;
+        }
+
+        .b {
+            display: grid;
+            grid-template-columns: 4fr 4fr 4fr;
+            margin: 20px;
+            text-align: right;
+        }
+        .middle{
+            height: 500px;
+            border: 1px solid;
+        }
+        .footer{
+            display: grid;
+            grid-template-columns: 6fr 6fr;
+            text-align: center;
+            /* font-size: 20px; */
+            background-color: black;
+            color: white;
+        }
+        .leftbox{
+            border-right: 2px dashed ;
+            height: 200px;
+        }
+        li{
+            list-style-type: none;
+            font-size: 15px;
+            padding: 5px;
+        }
+        .addr{
+            color: rgb(241, 211, 41);
+            font-size: 20px;
+            font-family: 'Courier New', Courier, monospace;
+            background-color: rgb(65, 45, 45);
+            height: 20px;
+            margin-top: 1px;
+            padding: 20px;
+            
+        }
+        .map{
+            height: 500px;
+            border: 3px solid;
+            margin-top: 20px;
+        }
+        .video{
+            height: 200px;
+            border: 3px solid;
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: 6fr 6fr;
+            margin: 5px;
+            padding: 3px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+
+    <div class="header">
+        <div>
+            <img src="pace.png" alt="logo">
+        </div>
+        <div>
+            <h1 style="text-align: center;">PACE COMPUTER INSTITUTE</h1>
+        </div>
+        <div class="b">
+            <div class="bi bi-telephone"> &nbsp; CONTACT</div>
+            <div class="bi bi-book"> &nbsp; ABOUT</div>
+            <div class="bi bi-power"> &nbsp; LOGIN</div>
+        </div>
+    </div>
+
+    <div class="middle">
+
+    </div>
+    <div class="footer">
+        <div class="leftbox">
+            <p class="addr">Address </p>
+            <ol>
+                <li>PACE COMPUTER INSTITUTE</li>
+                <li>Cumbum</li>
+                <li>Prakasma Dist-523333</li>
+                <li>Near RTC Busstand.</li>
+            </ol>
+        </div>
+        <div class="rightbox">
+            <p class="addr">Address </p>
+            <ol>
+                <li>PACE COMPUTER INSTITUTE</li>
+                <li>Cumbum</li>
+                <li>Prakasma Dist-523333</li>
+                <li>Near RTC Busstand.</li>
+            </ol>
+        </div>
+    </div>
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3843.212680977357!2d79.10807587453046!3d15.58028158503055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb526cabb5ce933%3A0xf4e39a416ad29b84!2sPACE%20COMPUTER%20INSTITUTE!5e0!3m2!1sen!2sin!4v1685542030248!5m2!1sen!2sin" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="video">
+        <div >
+            <iframe width="100%" height="200" src="https://www.youtube.com/embed/Q_ZNGowjvjg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div style="margin-left: 10px;">
+            <iframe width="100%" height="200" src="https://www.youtube.com/embed/MWg9I3kbsZE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+
+</body>
+
+</html>
