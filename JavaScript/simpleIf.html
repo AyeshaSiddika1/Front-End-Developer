@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("~~~~~~~~~~~~STUDENT DETAILS~~~~~~~~~~");
+        var stuname=prompt('Enter Student Name : ');
+        var stuage=prompt("Enter Student Age : ");
+        var ID=prompt("Enter Student ID :");
+        var branch=prompt("Enter Student Branch :");
+        var m1=prompt("Enter M1 Marks : ");
+        m1=parseInt(m1);
+        var m2=prompt("Enter M2 Marks : ");
+        m2=parseInt(m2);
+        var m3=prompt("Enter M3 Marks : ");
+        m3=parseInt(m3);
+        var total=m1+m2+m3;
+        var avg=total/3;
+        console.log("Student Name : " +stuname);
+        console.log("Student Age : " +stuage);
+        console.log("Student ID : " +ID);
+        console.log("Student Branch : " +branch);
+        console.log("Student Total : " +total);
+        console.log("Student Average : " +avg);
+        console.log(":)");
+        if(avg>=40){
+            console.log("Pass");
+        }
+        if(avg<40){
+            console.log("FAIL");
+        }
+      
+    </script>
+</body>
+</html>
