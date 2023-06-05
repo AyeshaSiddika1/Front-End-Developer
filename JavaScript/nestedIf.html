@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var empname=prompt("Enter Employee Name : ");
+        var empage=prompt("Enter Employee Age : ");
+        var empgender=prompt("Enter Employee Gender : ");
+        var empdept=prompt("Enter Employee Department : ");
+        var empsalary=prompt("Enter Employee Salary : ");
+        salary=parseInt(empsalary);
+        var pf=(salary*14)/100;
+        var hra=(salary*25)/100;
+        var totalsalary=salary+pf+hra;
+        console.log("~~~~~~~~EMPLOYEE DETAILS~~~~~~~");
+        console.log("Employee Name "+empname);
+        console.log("Employee Age "+empage);
+        console.log("Employee Gender "+empgender)
+        console.log("Employee Department "+empdept);
+        console.log("Employee Salary "+salary);
+        console.log("Employee PF "+pf);
+        console.log("Employee HRA "+hra);
+        console.log("Employee Total Salary "+totalsalary);
+        var totaltaxtobepaid,taxpercentage=0;
+        if(empgender=="male"){
+            if(totalsalary>=100000){
+                taxpercentage=15;
+            }else if(totalsalary>=15000){
+                taxpercentage=10;
+            }else if(totalsalary>=25000){
+                taxpercentage=5;
+            }else{
+                taxpercentage=0;
+            }
+        }
+        else{
+            if(totalsalary>=100000){
+                taxpercentage=10;
+            }else if(totalsalary>=15000){
+                taxpercentage=5;
+            }
+            else{
+                taxpercentage=0;
+            }
+        }
+        totaltaxtobepaid=(totalsalary*taxpercentage)/100;
+        console.log("Total Tax : "+totaltaxtobepaid)
+    </script>
+</body>
+</html>
