@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Declaring a variable outside the function is GLOBAL VARIABLE , we can access from ANY WHERE
+        // Declaring a variable inside the function is LOCAL VARIABLE , we can't access from outside of the function
+        var a=90;         // Gllobal Variable
+        var displaymsg=function(){
+            var b=99;     // Local Variable
+            console.log("Value of a is "+ a);
+            console.log("value of b is "+ b);
+        }
+        displaymsg();
+        console.log("Value of a is "+ a);
+        console.log("value of b is "+b); 
+        // value of b doesn't print because, it is a local variable (we can't acces from outside of the function)
+
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var ename, eage, egender, basicsal, totalsal, pf, hra, totaltax;
+        // Reading data from user
+        function readEmpDeta() {
+            ename = prompt("Enter Employee Name  ");
+            eage = prompt("ENter Employee Age");
+            eage = parseInt(eage);
+            egender = prompt("Enter Employee gender");
+            basicsal = prompt("Enter Basic Employee Salary");
+            basicsal = parseInt(basicsal);
+        }
+        function getPfHraAndTotalsalary(){
+            pf=(14*basicsal)/100;
+            hra=(25*basicsal)/100;
+            totalsal=pf+hra+basicsal;
+
+        }
+        function calTotalTax(){
+            if(egender=='male'){
+                if(totalsal>=300000){
+                    taxpercent=10;
+                }else{
+                    taxpercent=5;
+                }
+            }else{
+                if(totalsal>=300000){
+                    taxpercent=5;
+                }else{
+                    taxpercent=0;
+                }
+            }
+            totaltax=(totalsal+taxpercent)/100;
+        }
+        function displayEmpDetails(){
+            console.log("Employee Name : "+ ename);
+            console.log("Employee Age : "+ eage);
+            console.log("Employee Gender : "+ egender);
+            console.log("Total Salary : "+ totalsal);
+            console.log("Tax : "+ totaltax);
+        }
+        readEmpDeta();
+        getPfHraAndTotalsalary();
+        calTotalTax();
+        displayEmpDetails();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    <script>
+        var data=function(){
+            var a,b; // local Variable
+            a=prompt("Enter a value");
+            a=parseInt(a);
+            b=prompt("Enter b value");
+            b=parseInt(b);
+            gettotal(a,b);
+        }
+       var gettotal=(p,q)=>{
+            var result=p+q;
+            console.log("Result is : "+ result);
+        }
+        data();
+    </script>
+</body>
+</html>

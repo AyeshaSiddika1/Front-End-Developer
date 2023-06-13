@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var a = prompt("Enter a value : ");
+        a = parseInt(a);
+        var b = prompt("Enter b value : ")
+        b = parseInt(b);
+        var choose = prompt("Choose any number 1.ADD 2.SUB 3.MUL 4.DIV");
+        switch (choose) {
+            case '1':
+                var sum = a + b;
+                console.log("Sum of " + a + "+" + b + " is : " + sum);
+                break;
+            case '2':
+                var sub = a - b;
+                console.log("Sub of " + a + "-" + b + " is : " + sub);
+                break;
+            case '3':
+                var mul = a * b;
+                console.log("Multiply of " + a + "*" + b + " is : " + mul);
+                break;
+            case '4':
+                var div = a / b;
+                console.log("Division of " + a + "/" + b + " is : " + div);
+                break;
+            default:
+                console.log("Invalid option");
+        }
+    </script>
+</body>
+
+</html>

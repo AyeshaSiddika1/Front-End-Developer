@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        console.log("~.~.~.~.~STUDENT DETAILS~.~.~.~.~.~")
+        var name, age, gender, branch, m1, m2, m3, total, average;
+        function readStudentDetails() {
+            name = prompt("Enter Student Name  ");
+            branch = prompt("Enter Student Branch  ");
+            gender = prompt("Enter Student Gender ");
+            age = prompt("Enter Student age : ");
+            age = parseInt(age);
+            m1 = prompt("Enter m1 Marks ");
+            m1 = parseInt(m1);
+            m2 = prompt("Enter m2 Marks ");
+            m2 = parseInt(m2);
+            m3 = prompt("Enter m3 Marks ");
+            m3 = parseInt(m3);
+        }
+        function getTotalandAvg() {
+            total = m1 + m2 + m3;
+            average = total / 3;
+        }
+        function displayStudentDetails() {
+            console.log("Student Name : " + name);
+            console.log("Student Branch : " + branch);
+            console.log("Student Gender : " + gender)
+            console.log("Student age : " + age);
+            console.log("Total : " + total);
+            console.log("Average : " + average);
+        }
+        function studentGrade() {
+            if (average >= 40) {
+                console.log("Student Passed ");
+            } else if (average >= 90) {
+                console.log("Distintion");;
+            } else if (average >= 60) {
+                console.log("first class ");
+            } else {
+                console.log("second class");
+            }
+        }
+        readStudentDetails();
+        getTotalandAvg();
+        displayStudentDetails();
+        studentGrade();
+
+    </script>
+</body>
+
+</html>
