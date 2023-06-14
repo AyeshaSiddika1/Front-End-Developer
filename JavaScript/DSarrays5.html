@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DS</title>
+</head>
+<body>
+    <script>
+        var data=[];
+        var n=prompt("Enter Array Length ");
+        n=parseInt(n);
+        for(var i=0;i<n;i++){
+            data[i]=prompt("Enter Value "+ i);
+            data[i]=parseInt(data[i]);
+        }
+        var sum=0;
+        for(var i=0;i<data.length;i++){
+            if(data[i]%2!==0){
+                sum=sum+data[i];   
+            }
+        }
+        console.log(data);
+        console.log("Sum of Even Numbers is " + sum);
+    </script>
+</body>
+</html>
