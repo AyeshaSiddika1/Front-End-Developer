@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STRINGS</title>
+</head>
+
+<body>
+    <script>
+        var msg = "Hello every one,Hope everyone doing well";
+        console.log(msg);
+        console.log(msg.length);
+        console.log(msg.charAt(7));
+        console.log(msg.charCodeAt(7));
+        console.log(msg.substring(3,10));// start index end index
+        var msg2=msg.replace(" ",'_');   // it will replace only one
+        console.log(msg2);
+        var msg3=msg.replace(/ /g,':)');    // it replace all spaces with given symbol (g-global)
+        console.log(msg3);
+        console.log(msg.indexOf("e"));         // index value
+        console.log(msg.indexOf("every"));
+        console.log(msg.split(''));
+        console.log(msg.includes('hope'));   // true(whether this word existed or not)
+        console.log(msg.includes('Hope'));
+        console.log(msg.toUpperCase());
+        console.log(msg.toLowerCase());
+         
+        
+    </script>
+</body>
+
+</html>
