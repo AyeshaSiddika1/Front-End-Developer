@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DS</title>
+</head>
+<body>
+    <script>
+        // In case of array it store like below
+        var studentData1=['Raj','Male','20',[30,40,50]]; 
+        // Json Object
+        var studentData2={
+            'Sname':'Raj',
+            'Gender':'Male',
+            Age:'20',       //  Key(Age) does't have any quotations
+            'Marks':[30,40,50,60],
+            // The Default datatype of a key in Json format is STRING. So we no need to write key in ' ' quotations " " quotations
+            // OR
+            // If you write with quotations / with out quotation ,it didn't through any errors 
+            total:0
+        };
+        console.log(studentData1);
+        console.log("Student Name :"+ studentData1[0]);
+        console.log(studentData2);
+        console.log("Student Name :"+ studentData2.Sname);
+        // for Total
+        for(var i=0;i<studentData2.Marks.length;i++){
+            studentData2.total=studentData2.total+studentData2.Marks[i];
+        }
+        studentData2.avg=studentData2.total/studentData2.Marks.length;
+        // In above example 'avg' is a new KEY it will directly add in Json object
+        console.log(studentData2);
+        
+        
+    </script>
+</body>
+</html>

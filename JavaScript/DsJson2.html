@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DS</title>
+</head>
+<body>
+    <script>
+        // Reading Data Dynamically
+        var studentdata={};
+        studentdata.name=prompt("Enter Student Name ");
+        studentdata.age=prompt("Enter Age ");
+        
+        studentdata.gender=prompt("Enter Gender");
+        studentdata.marks=[];
+        for(var i=0;i<4;i++){
+            studentdata.marks[i]=prompt("Enter Marks "+i);
+            studentdata.marks[i]=parseInt(studentdata.marks);
+        }
+        studentdata.total=0;
+        for(var i=0;i<studentdata.marks.length;i++){
+            studentdata.total=studentdata.total+studentdata.marks[i];
+        }
+            studentdata.avg=studentdata.total/studentdata.marks.length;
+        console.log(studentdata);
+            // console.log("Student Name : "+studentdata.name);
+            // console.log("Student Age : "+ studentdata.age);
+            // console.log("Total "+ studentdata.total)
+            // console.log("Average " + studentdata.avg);
+ 
+    </script>
+</body>
+</html>
