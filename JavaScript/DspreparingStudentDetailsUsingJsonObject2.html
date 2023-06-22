@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DS</title>
+</head>
+
+<body>
+    <script>
+        // functionality inside the Json object
+        var studentData = {
+            name: '',
+            age: '',
+            getstudentData: function () {
+                studentData.name = prompt("Enter Name");
+                studentData.age = prompt("Enter age");
+                studentData.marks = [];
+                for (var i = 0; i < 5; i++) {
+                    studentData.marks[i] = prompt("Enter marks of subjects " + i);
+                    studentData.marks[i] = parseInt(studentData.marks);
+                }
+                studentData.getTotalandAvg();      // calling function
+
+            },
+            getTotalandAvg: function () {
+                studentData.total = 0;
+                for (var i = 0; i < 5; i++) {
+                    studentData.total = studentData.marks[i] + studentData.total;
+                }
+                studentData.avg = studentData.total / studentData.marks.length;
+                studentData.getGrade();       // calling function
+            },
+            getGrade: function () {
+                if (studentData.avg >= 40) {
+                    studentData.grade = 'Passed';
+                } else {
+                    studentData.grade = 'Failed'
+                }
+                studentData.displayDetails();     // calling function
+
+            },
+            displayDetails: function () {
+                console.log(studentData);
+                console.log("Student Details");
+                console.log("Student Name : " + studentData.name);
+                console.log("Student age : " + studentData.age);
+                console.log("Average  : " + studentData.avg);
+                console.log("Grade : " + studentData.grade)
+            }
+        };
+        studentData.getstudentData();        // calling
+
+
+
+    </script>
+</body>
+
+</html>

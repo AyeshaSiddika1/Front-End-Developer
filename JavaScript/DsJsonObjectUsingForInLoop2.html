@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DS</title>
+</head>
+
+<body>
+    <script>
+        // Preparing Contact Details
+        var contactDetails = {
+            gender: 'male',
+            maritalstatus: 'unmarried',
+            profilepic: 'pace.png',
+            name: {
+                fname: 'Raj',
+                lastname: 'kumar',
+                middlename: 'nayak'
+            },
+            contactNo: {
+                office: '040-232774',
+                personal: [2324, 23243, 2565]
+            },
+            address: {
+                office: {
+                    building: '5A',
+                    status: 'AP',
+                    officespace: 'Mindspace'
+                },
+
+                personal: {
+                    DNo: 'A/45',
+                    state: {
+                        statecode: 'TS',
+                        name: 'Hyd'
+                    },
+                    country: 'India'
+                }
+            },
+            emailId: {
+                office: 'abc@office.com'
+            },
+            personal:['abc@gamil.com', 'pareyahoo.com'],
+            socialId:{
+                twitter: 'abctwitter',
+                facebook: 'Test'
+            }
+        };
+        function retrivedata(data){
+            for(var temp in data){
+                if(typeof(data[temp])=='object'){
+                    retrivedata(data[temp]);     // recursive calling function
+                }
+                else{console.log(temp)
+                console.log(data[temp]);
+                }
+            }
+        }
+        console.log(contactDetails.name.fname);
+        console.log(contactDetails.gender);
+        console.log(contactDetails.contactNo.personal[0]);
+        console.log(contactDetails.socialId.facebook);
+        console.log(contactDetails.profilepic);
+        // retrivedata(contactDetails);   // calling
+    </script>
+</body>
+
+</html>
