@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DS</title>
+</head>
+<body>
+    <script>
+        // This KEYWORD indicate current object
+        var bookDetails={
+            name: 'My Travel History',
+            price:'3000',
+            discount:10,
+            author:['ABC','PQR'],
+            diaplayDetails(){
+                console.log("Book Name : " + this.name);
+                console.log("Price : " + this.price);
+                console.log("Author : " + this.author);
+                this.getdiscount();
+            },
+            getdiscount(){
+                var priceAfterDiscount=(this.price*this.discount)/100;
+                console.log("Price After Discount = "+ priceAfterDiscount);
+            }
+           
+        };
+        bookDetails.diaplayDetails();
+        
+       
+    </script>
+</body>
+</html>

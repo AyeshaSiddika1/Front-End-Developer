@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DS</title>
+</head>
+<body>
+    <script>
+        console.log("Start");
+        var count=0;
+        var showmsg=()=>{
+            count++;
+            console.log(count  + " Hello My Job Is Done");
+            if(count==5){
+                clearInterval(myInterval);
+            }
+        }
+        var myInterval=setInterval(showmsg,2000)
+    </script>
+</body>
+</html>
